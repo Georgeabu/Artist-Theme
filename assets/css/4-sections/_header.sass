@@ -1,0 +1,84 @@
+header
+  background: url(../img/hero-bg.jpg) center center
+  background-size: cover
+  padding-bottom: 150px
+  position: relative
+  
+  .logo
+    +size(50px)
+    float: left
+    margin: 10px 0 0 40px
+    
+    svg
+      +size(100%)
+      
+      path
+        fill: rgba(0,0,0,0.4)
+    
+  .menu-button
+    font-size: 40px
+    color: rgba(0,0,0,0.4)
+    height: 40px
+    line-height: 40px
+    +position(absolute, 10px 50px null null)
+    display: none
+    z-index: 10
+    
+  nav 
+    float: right
+    margin: 28px 40px 0 0
+    
+    a
+      display: inline-block
+      margin-left: 31px
+      
+      @extend %small-bold
+      color: rgba(0,0,0,0.7)
+      
+      &:hover
+        color: rgba(0,0,0,1)
+      
+  @media screen and (max-width: 550px)
+    .menu-button
+      display: block
+      
+    nav
+      position: absolute
+      width: 100%
+      background: fade-out($nav-bg-color, 0.2)
+      text-align: center
+      margin: 0
+      padding-top: 0
+      height: 0
+      overflow: hidden
+      +transition()
+      
+      a
+        display: block
+        font-size: 20px
+        color: $bg-color
+        margin: 15px
+        border-bottom: 1px dotted
+      
+  h1
+    clear: both
+    text-align: center
+    font:
+      size: 72px
+      weight: 700
+    color: rgba(255,255,255,1)
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 21px
+    padding-top: 100px
+    
+    span
+      display: inline-block
+      border: solid 10px rgba(255,255,255,1)
+      padding: 0.2em 0.5em
+       
+  .kicker
+    text-align: center
+    @extend %small-bold
+    color: rgba(255,255,255,1)
+    letter-spacing: 0.05em

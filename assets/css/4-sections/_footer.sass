@@ -1,0 +1,33 @@
+footer
+  background: url(../img/logo.svg) no-repeat, url(../img/hero-bg.jpg) center center
+  background-size: 50px 50px, cover
+  background-position: 40px 53px, 50% 50%
+  background-blend-mode: overlay, normal
+  
+  .lockup
+    padding: 53px 40px
+    +clearfix
+
+    .lockup-wrap
+      float: left
+      margin-top: 4px
+      margin-left: 80px
+
+      nav
+
+        a
+          display: inline-block
+          margin-right: 31px
+
+          @extend %small-bold
+          color: rgba(0,0,0,0.7)
+
+          &:hover
+            color: rgba(0,0,0,1)
+
+      .copyright
+        font-size: 12px
+        text-transform: uppercase
+        color: rgba(0,0,0,0.4)
+        margin: 0
+          

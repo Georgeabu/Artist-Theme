@@ -1,0 +1,66 @@
+.section-contactform
+  
+  form
+    max-width: 460px
+    margin: 50px auto 175px auto
+    padding: 5px
+    
+    input,textarea
+      +box-sizing(border-box)
+      border: 3px solid $accent-darker-color
+      width: 100%
+      padding: 5px
+      font:
+        size: 14px
+        weight: 300
+        
+      &:focus
+        outline: none
+        border-color: $accent-color
+        
+    textarea
+      height: 10em
+      
+    label
+      display: block
+
+      span
+        display: block
+
+    .contactform-info-wrapper
+      width: 100%
+      +display(flex)
+      margin-bottom: 20px
+
+      label
+        display: block
+        width: 50%
+        +box-sizing(border-box)
+
+        &:first-child
+          padding-right: 5px
+
+        &:last-child
+          padding-left: 5px
+        
+    [type="submit"]
+      background: $accent-darker-color
+      width: 33%
+      padding: 10px
+      margin-top: 16px
+      font:
+        size: 20px
+      letter-spacing: 2px
+      color: $bg-color
+      text-transform: uppercase
+      float: right
+      
+      &:after
+        content: ""
+        clear: both
+      
+      &:hover
+        background: $accent-color
+        border-color: $accent-color
+      
+      

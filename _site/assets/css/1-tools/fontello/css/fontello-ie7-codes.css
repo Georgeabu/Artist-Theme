@@ -1,0 +1,19 @@
+
+.icon-mail { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-phone { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-right-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.icon-left-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.icon-cancel { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+.icon-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf099;&nbsp;'); }
+.icon-facebook { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09a;&nbsp;'); }
+.icon-github { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09b;&nbsp;'); }
+.icon-menu { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c9;&nbsp;'); }
+.icon-gplus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d5;&nbsp;'); }
+.icon-youtube { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf167;&nbsp;'); }
+.icon-tumblr { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf173;&nbsp;'); }
+.icon-dribbble { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf17d;&nbsp;'); }
+.icon-left-circled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf190;&nbsp;'); }
+.icon-behance { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1b4;&nbsp;'); }
+.icon-codeopen { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1cb;&nbsp;'); }
+.icon-git { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1d3;&nbsp;'); }
+.icon-linkedin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30c;&nbsp;'); }

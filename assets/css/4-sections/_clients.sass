@@ -1,0 +1,190 @@
+.section-clients
+  
+  .clients-carrousel
+    max-width: 860px
+    padding: 0 80px
+    margin: 60px auto
+    position: relative
+    
+    /* --------------------------- */
+    /* Styling for controll buttons */
+    
+    .client-controll-next,.client-controll-prev
+      +size(40px)
+      cursor: pointer
+      opacity: 0.7
+      position: absolute
+      top: calc(50% - 20px)
+      
+      &:hover
+        opacity: 1
+      
+      svg
+        +size(100%)
+        
+        path
+          fill: $accent-darker-color
+          
+    .client-controll-prev
+      left: 0
+      
+    .client-controll-next
+      right: 0
+        
+    .client-controll-mobile
+      width: 100%
+      display: none
+      +align-items(center)
+      +justify-content(center)
+      
+      span
+        display: block
+        +size(20px)
+        border-radius: 50%
+        background: $section-bg-color
+        margin: 10px
+        
+        &.client-active
+          background: $accent-darker-color
+          
+    /* --------------------------- */
+    
+    /* --------------------------- */
+    /* Client unit styles */
+    
+    .client-unit
+      display: none
+      
+      &.client-active
+        +display(flex)
+        +animation(client-display 0.4s ease-in)
+          
+      .client-avatar
+        border-radius: 50%
+        width: 30%
+        margin: 0
+        padding: 0 15px
+        +display(flex)
+        +flex-direction(column)
+        +align-items(center)
+        +justify-content(center)
+        box-sizing: border-box
+        
+        img
+          border-radius: 50%
+          +size(100px)
+          margin-bottom: 10px
+          
+        figcaption
+          text-align: center
+          color: $section-font-color
+          
+          strong
+            font-size: 14px
+            text-transform: uppercase
+            letter-spacing: 1px
+          
+          p
+            font-size: 12px
+        
+      .client-quote
+        color: $section-font-color
+        width: 70%
+        margin: 0
+        padding: 0 20px
+        box-sizing: border-box
+        font-size: 18px
+        line-height: 1.8
+        position: relative
+        
+        .icon-quote-mark
+          +size(50px)
+          position: absolute
+          z-index: -1
+          opacity: 0.5
+          
+          svg
+            +size(100%)
+            
+            path
+              fill: $accent-color
+              
+          &.icon-quote-up
+            top: -10px
+            left: 5px
+            
+          &.icon-quote-down
+            bottom: 20px
+            right: 20px
+            +transform(rotate(180deg))
+     
+    /* --------------------------- */
+    
+  /* --------------------------- */
+  /* Client logo styles */
+  
+  .clients-logos
+    max-width: 750px
+    margin: 60px auto 120px auto
+    +display(flex)
+    +justify-content(space-around)
+    +align-items(flex-end)
+    
+    .client-logo
+      margin: 0 20px
+      opacity: 0.5
+      +display(flex)
+      +justify-content(center)
+      cursor: pointer
+      +transition()
+
+      &.client-active
+        opacity: 1
+        box-shadow: 0 12px 0 $bg-color, 0 16px 0 $accent-darker-color
+    
+  /* --------------------------- */
+  
+  /* --------------------------- */
+  /* Animation handler */
+  
++keyframes(client-display)
+  0%
+    opacity: 0
+    +transform(rotateY(90deg))
+    
+  100%
+    opacity: 1
+    +transform(rotateY(0deg))
+    
+  /* --------------------------- */ 
+  
+  /* --------------------------- */
+@media screen and (max-width: 750px)
+  .section-clients
+    
+    .clients-carrousel
+      padding: 0 20px
+      
+      .client-controll-next,.client-controll-prev
+        display: none
+        
+      .client-controll-mobile
+        +display(flex)
+        
+      .client-unit
+        
+        &.client-active
+          +flex-direction(column)
+        
+        .client-avatar
+          width: 100%
+          
+        .client-quote
+          width: 100%
+           
+    .clients-logos
+      display: none
+      
+    
+  
+  

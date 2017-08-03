@@ -1,0 +1,52 @@
+<section class="section-clients" id="clients">
+
+  <h3>Clients</h3>
+  
+  <div class="clients-carrousel">
+    
+    {% for client in site.data.settings.clients %}
+    
+    <div class="client-unit {% if forloop.first %}client-active{% endif %}">
+      
+      <figure class="client-avatar">
+        <img src="/assets/img/clients/{{ client.avatar }}" alt="client-avatar">
+        <figcaption>
+          <strong>{{ client.name }}</strong>
+          <p>{{ client.title }}</p>
+        </figcaption>
+      </figure>
+      
+      <div class="client-quote">
+        <div class="icon-quote-mark icon-quote-up">{% include icons/icon-quote-mark.html %}</div>
+        {{ client.quote }}
+        <div class="icon-quote-mark icon-quote-down">{% include icons/icon-quote-mark.html %}</div>
+      </div>
+      
+    </div>
+    
+    {% endfor %}
+    
+    <div class="client-controll-prev">{% include icons/icon-prev.html %}</div>
+    <div class="client-controll-next">{% include icons/icon-next.html %}</div>
+    
+    <div class="client-controll-mobile">
+      {% for client in site.data.settings.clients %}
+      <span class="{% if forloop.first %}client-active{% endif %}"></span>
+      {% endfor %}
+    </div>
+    
+  </div>
+  
+  <div class="clients-logos">
+    
+    {% for client in site.data.settings.clients %}
+    
+    <figure class="client-logo {% if forloop.first %}client-active{% endif %}">
+      <img src="/assets/img/clients/{{ client.logo }}" alt="client-logo">
+    </figure>
+    
+    {% endfor %}
+    
+  </div>
+  
+</section>
