@@ -9,7 +9,7 @@
     <div class="client-unit {% if forloop.first %}client-active{% endif %}">
       
       <figure class="client-avatar">
-        <img src="/assets/img/clients/{{ client.avatar }}" alt="client-avatar">
+        <img src="assets/img/clients/{{ client.avatar }}" alt="client-avatar">
         <figcaption>
           <strong>{{ client.name }}</strong>
           <p>{{ client.title }}</p>
@@ -42,7 +42,7 @@
     {% for client in site.data.settings.clients %}
     
     <figure class="client-logo {% if forloop.first %}client-active{% endif %}">
-      <img src="/assets/img/clients/{{ client.logo }}" alt="client-logo">
+      <img src="assets/img/clients/{{ client.logo }}" alt="client-logo">
     </figure>
     
     {% endfor %}

@@ -54,7 +54,7 @@ $( document ).ready(function() {
     $(".thumb-unit").click(function loadContent() {
       
       var folderName = $(this).data("folder"),
-          newHTML = '/work/' + folderName + '.html',
+          newHTML = 'work/' + folderName + '.html',
           newTitle = $(this).find("strong").text(),
           loadingSpinner = '<div class="loader">Loading...</div>';
       
