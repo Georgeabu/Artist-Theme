@@ -1,8 +1,6 @@
-DevTips-Starter-Kit (Jekyll Friendly)
+Static WebPage build with Travis Neilsons YouTube guide.
+Updated with my own ideas.
 ===================
-
-Use this as a simple structure for a simple start to a simple site.
-
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=GTBaQ2DcGUk
 " target="_blank">
