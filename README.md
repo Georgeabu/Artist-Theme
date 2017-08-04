@@ -8,6 +8,7 @@ _Updated with my own ideas._
   * FitText.js
   * Behance
   * Fontello
+  
 * **The Skills**
  * Jekyll
  * Sass Architecture
@@ -20,8 +21,6 @@ _Updated with my own ideas._
  * Visual Design in Photoshop
  * Planning and Project Organization
  
-
-
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=GTBaQ2DcGUk
 " target="_blank">
 Watch the video on YouTube
