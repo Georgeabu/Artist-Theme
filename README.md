@@ -1,10 +1,10 @@
-# Static Portfolio WebPage.
-## Build with Travis Neilsons YouTube guide.
-Updated with my own ideas.
-## Stack for this project:
-* The Services:
-** Github
-** Formspree.io
+# Static Portfolio WebPage. #
+## Built with Travis Neilsons YouTube guide. ##
+_Updated with my own ideas._
+### Stack for this project: ###
+* **The Services:**
+  * Github
+  * Formspree.io
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=GTBaQ2DcGUk
